@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+  <title>title</title>
+  <style>
+    body {
+      background: linear-gradient(to right,black 70%, #9f0101);
+    }
+
+    h1 {
+      transform:translate(0px,-200px);
+      color:white;
+      text-align: center;
+      text-shadow: 5px 5px red;
+      font-family: 'Joti One';
+      font-size: 50px;
+      animation-name:explosion;
+      animation-duration:1s;
+      animation-delay:1s;
+      animation-fill-mode:both;
+      transition: font-size 1s;
+      margin:10px;
+    }
+    h1:hover{
+      font-size:55px;
+      color:red;
+      text-shadow:5px 5px white;
+    }
+    @keyframes explosion{        /*This animation makes the heading come in from the top of the webpage when the page is loaded */
+      from{
+        transform:translate(0px,-200px);
+        
+      }
+      to {
+        transform:translate(0px,0px); /*the title moves down when the page is open or reloaded. */
+      }
+    }
+
+
+
+    #facts {
+      border-style:solid;
+      opacity:0;
+      font-size: 28px;
+      font-family: 'Joti One';
+      color: white;
+      margin-left:300px;
+      margin-right:350px;
+      animation-name:appear;
+      animation-duration:2s;
+      animation-delay:1s;
+      animation-fill-mode:both; /*This makes the animation stay where it is after the animation is finished.*/
+      animation-timing-function:ease;
+
+    }
+    @keyframes appear{    /*This animation makes the image appear slowly when the page is loaded*/
+      from{
+        opacity:0;
+      }
+      to{
+        opacity:1;
+      }
+    }
+
+    #logo {
+      opacity:0;
+      float: left;
+      animation-name:comeout;
+      animation-duration:5s;
+      animation-delay:1s;
+      animation-fill-mode:both;
+
+
+    }
+    @keyframes comeout{
+      from{
+        opacity:0;
+      }
+      to{
+        opacity:1;
+      }
+    }
+
+    #logo2{
+      opacity:0;
+      animation-name:rotate;
+      animation-duration:3s;
+      animation-delay:1s;
+      animation-fill-mode:both;
+      
+      float: right;
+    
+     
+  }
+  @keyframes rotate{  /*This animation code makes the image appear slowly and then it rotates as it appears*/
+    from{
+      opacity:0;
+    }
+    to{
+      opacity:1;
+      transform:rotate(360deg);
+    }
+  }
+  
+     
+  
+  
+    
+      
+    
+     
+  </style>
+</head>
+
+<body>
+  <h1>Random Facts about the Uchiha Clan!</h1>
+  <div id="logo">
+    <img src="uchiha-logo.jpg" height="300px" width="300px">
+
+  </div>
+  <div id="logo2">
+    <img src="uchiha.png" height="300px" width="300px">
+
+  </div>
+
+  
+
+
+  <div id="facts">
+
+    <ol>
+      <li>The village is part of the four clans that are in the Hidden Leaf Village</li>
+      <li>They have special eyes called the Sharingan that give them special powers unique to each person in the clan</li>
+      <li>The Sharingan can evolve to the Mangekyou Sharingan when the person experiences intense trauma</li>
+      <li>The whole clan was killed by one of its own but the killer didn't kill his own brother</li>
+      <li>The name Uchiha is an alternative way to say "paper fan" this relates to their clan's symbol</li>
+      <li>The clan's skills were based on Shinto Deities in a Japanese creation myth</li>
+      <li>The eyes that the Uchiha's have, has the power to control reality for a limited amount of time if they're willing to lose an eye</li>
+
+    </ol>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
